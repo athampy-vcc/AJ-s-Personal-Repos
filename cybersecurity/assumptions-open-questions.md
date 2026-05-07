@@ -13,3 +13,5 @@
 5. Exceptions: approval authority, expiry standards, evidence needed, and review cadence.
 6. Ticketing integration: ServiceNow/Jira requirement for findings, changes, and exceptions.
 7. Scope timing: when cloud-native publishing/WAF becomes in scope, and DDoS ownership model.
+
+Note: Will have to remove above Open questions if not needed
