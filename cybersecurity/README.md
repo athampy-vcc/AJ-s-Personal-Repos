@@ -3,9 +3,6 @@
 ## Purpose
 This repository captures the Reverse-KT outputs and the delivery plan to improve cloud security posture across Azure and AWS using a CNAPP/CSPM-led approach.
 
-## Source
-Content is derived from the client-provided KT transcript ("KT for Cloud Governance").
-
 ## Client-Stated Baseline (Current State)
 - Prisma Cloud is onboarded for Azure and AWS, but onboarding/implementation is not complete.
 - Scoring/baseline is not reliable because policies/baseline are not aligned to the client benchmark.
