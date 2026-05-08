@@ -8,7 +8,7 @@
   - Azure: CIS 3.0
   - AWS: CIS 4.0
 - Prisma Cloud posture/measurement is not treated as Volvo-benchmark aligned when baseline mapping is not Volvo-specific.
-- Prisma Cloud is described as more suitable for greenfield environments than brownfield/legacy-heavy estates, mainly due to integration and exception-handling complexity.
+- Prisma Cloud was described as challenging to integrate into an existing environment and easier to adopt for greenfield environments, mainly due to integration and exception-handling complexity.
 
 ### 1.2 Azure baseline (enterprise-scale)
 - Azure enterprise-scale deployments include Microsoft Cloud Security Benchmark (MCSB) v1/v2 as a default baseline depending on deployment timeframe.
@@ -22,23 +22,27 @@
 
 ---
 
-## 2. Defender for Cloud scope
+## 2. Microsoft Defender for Cloud scope (PoC)
 
-### 2.1 What Defender for Cloud is used for (in this context)
-- Defender for Cloud is used as a CSPM view for security posture and misconfiguration visibility across environments.
-- Security posture is viewed in an aggregated manner; environment segmentation was discussed (legacy / brownfield / greenfield).
+### 2.1 Current status
+- Microsoft Defender for Cloud is currently under Proof of Concept (PoC).
+- Adoption/standardization decision is not finalized at this time.
 
-### 2.2 Current scoring snapshot (as observed during the discussion)
+### 2.2 How Defender for Cloud is being evaluated (in this context)
+- Defender for Cloud is being evaluated as a CSPM view for security posture and misconfiguration visibility across environments.
+- Security posture is reviewed in an aggregated manner; environment segmentation was discussed (legacy / brownfield / greenfield).
+
+### 2.3 Scoring snapshot used during discussion context
 - Defender for Cloud (overall): 52%
 - Azure component: 46%
 - AWS component (in Defender view): 61%
 
-### 2.3 Misconfiguration vs runtime threats (scope boundary)
+### 2.4 Misconfiguration vs runtime threats (scope boundary)
 - Misconfiguration findings (CSPM): handled via governance and configuration remediation patterns.
 - Runtime threat detection and response (suspicious activity, logs, incidents): handled by SOC/Cyber Defense Center.
 
-### 2.4 Defender for Endpoint integration note
-- Defender for Cloud (Plan 1 / integrated posture) was referenced in the context of ensuring Defender for Endpoint coverage on compute instances (e.g., ECU instances).
+### 2.5 Defender for Endpoint integration note
+- Defender for Cloud posture was referenced in the context of ensuring Defender for Endpoint coverage on compute instances (e.g., ECU instances).
 
 ---
 
