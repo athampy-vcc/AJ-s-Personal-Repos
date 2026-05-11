@@ -12,6 +12,8 @@
 - SOC: Security Operations Center
 - SSO: Single Sign-On
 
+- ![DFC Test](images/DFC_Test.png)
+
 ## Tools/Services Mentioned
 - Prisma Cloud: CSPM tool (vendor baseline configuration referenced)
 - AWS Security Hub: CSPM/service findings aggregation and standards scoring
@@ -23,4 +25,5 @@
 - Rubrik Security Cloud: Backup/cyber resilience platform (owned by backup team)
 
 ## Reference Image
-![DFC Test](images/DFC_Test.png)
+<img width="383" height="206" alt="image" src="https://github.com/user-attachments/assets/18deabaa-3263-4f75-8202-3e471c316a12" />
+
