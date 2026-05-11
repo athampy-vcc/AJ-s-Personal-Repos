@@ -22,5 +22,5 @@
 - F5 Load Balancer: Application publishing / reverse proxy at edge
 - Rubrik Security Cloud: Backup/cyber resilience platform (owned by backup team)
 
-![reference-image]()
-- 
+## Reference Image
+![DFC Test](images/DFC_Test.png)
