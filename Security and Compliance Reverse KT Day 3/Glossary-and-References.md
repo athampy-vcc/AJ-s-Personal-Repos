@@ -22,5 +22,5 @@
 - F5 Load Balancer: Application publishing / reverse proxy at edge
 - Rubrik Security Cloud: Backup/cyber resilience platform (owned by backup team)
 
-- ![reference-image](https://github.com/athampy-vcc/AJ-s-Personal-Repos/Security and Compliance Reverse KT Day 3/images/DFC_Test.png)
+![reference-image]()
 - 
