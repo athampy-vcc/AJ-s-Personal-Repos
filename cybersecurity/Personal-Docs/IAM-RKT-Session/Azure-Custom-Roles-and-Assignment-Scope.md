@@ -9,8 +9,7 @@
 1. Prefer built-in roles; custom roles only fill a real gap.
 2. Permissions are scoped tight — heavy use of `not_actions` to block destructive operations.
 3. Single source of truth — vending workflows **look up** central roles by name, never re-define them.
-4. Assignable scope is generally the **root management group**, so the same role can be assigned anywhere below.
-5. Naming conventions encode the **owner** and **capability** (e.g. `[FinOps]-…`, `[PCE]-…`, `(GF)`, `(RCN)`, `-LimitAction`).
+4. Naming conventions encode the **owner** and **capability** (e.g. `[FinOps]-…`, `[PCE]-…`, `(GF)`, `(RCN)`, `-LimitAction`).
 
 ---
 
