@@ -25,20 +25,7 @@
 
 ---
 
-## 2. Identity Architecture at a Glance
-
-```mermaid
-flowchart LR
-    A[Entra ID<br/>users & groups] -- SCIM sync --> B[IAM Identity Center<br/>Enterprise App]
-    B --> C{Permission Set}
-    C --> D[AWS Member Account<br/>application]
-    C --> E[AWS Member Account<br/>platform]
-    F[AWS Organizations<br/>SCPs] -. guardrails .-> D
-    F -. exceptions .-> E
-    G[Account Vending Machine<br/>IaC] -- creates --> A
-    G -- creates & binds --> B
-    G -- applies --> F
-```
+## 2. Identity at a Glance
 
 - **Entra ID** is the identity provider; groups are the unit of assignment.
 - **IAM Identity Center** holds the permission sets and federates access to member accounts.
