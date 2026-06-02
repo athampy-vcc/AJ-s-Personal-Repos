@@ -32,7 +32,7 @@
 - **AWS Organizations + SCPs** form the outer boundary; permission sets define the inner ceiling.
 - **Account Vending Machine (AVM)** automates the wiring during onboarding.
 
-> **Source of truth**
+
 > - End-to-end SSO automation — [`bootstrap/docs/sso_automation.md`](https://github.com/volvo-cars/mb-aws-infrastructure_as_code/blob/develop/bootstrap/docs/sso_automation.md)
 > - SSO shared-services layer overview — [`bootstrap/shared-services/sso/README.md`](https://github.com/volvo-cars/mb-aws-infrastructure_as_code/blob/develop/bootstrap/shared-services/sso/README.md)
 
@@ -78,7 +78,7 @@ FinOps is intentionally split into two custom sets so not every FinOps member ca
 | `FinOps-BillingAccess` | View billing, cost & usage, budgets. |
 | `FinOps-SavingsPlansFullAccess` | Manage Savings Plans / Reserved Instances (restricted subset of FinOps). |
 
-> **Source of truth**
+
 > - Standard, platform, auditor, and FinOps permission sets are defined alongside the customization layer described in [`bootstrap/shared-services/sso/README.md`](https://github.com/volvo-cars/mb-aws-infrastructure_as_code/blob/develop/bootstrap/shared-services/sso/README.md).
 
 ---
@@ -107,7 +107,7 @@ This pattern keeps the group purpose, target account, and environment unambiguou
 
 > Membership changes are deliberately **ignored by Terraform** (`lifecycle { ignore_changes = [members] }`) so day-to-day joiner/leaver actions by the application owner do not produce drift.
 
-> **Source of truth**
+
 > - Group naming pattern, owner delegation, enterprise-app assignment, and SCIM sync are documented in [`bootstrap/docs/sso_automation.md`](https://github.com/volvo-cars/mb-aws-infrastructure_as_code/blob/develop/bootstrap/docs/sso_automation.md).
 
 ---
@@ -135,7 +135,7 @@ Key rules:
 - The platform team performs a **least-privilege assessment** before any custom set is created. Requests for broad or root-equivalent access are challenged and re-scoped.
 - All custom permission sets live under the SSO shared-services layer of the IaC repo so they are reviewable, diffable, and reversible.
 
-> **Source of truth**
+
 > - Custom permission-set catalog (Terraform) — [`bootstrap/shared-services/sso/customization.tf`](https://github.com/volvo-cars/mb-aws-infrastructure_as_code/blob/develop/bootstrap/shared-services/sso/customization.tf)
 > - Shared-services layer & request flow context — [`bootstrap/shared-services/sso/README.md`](https://github.com/volvo-cars/mb-aws-infrastructure_as_code/blob/develop/bootstrap/shared-services/sso/README.md)
 
