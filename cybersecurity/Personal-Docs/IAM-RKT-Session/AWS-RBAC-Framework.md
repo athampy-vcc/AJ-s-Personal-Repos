@@ -177,17 +177,7 @@ When an IAM user is unavoidable, a **permission boundary** is attached so the us
 3. **OIDC / federated identities** (e.g. GitHub Actions, third-party SaaS that supports OIDC).
 4. **IAM users** — **exception only**, when the consuming tool genuinely supports no other auth mechanism.
 
-### 7.3 IAM user controls
-
-When an IAM user is approved, the following is enforced via IaC:
-
-- Created exclusively through Terraform — never via the console.
-- **Programmatic access only** (no console password).
-- A **permission boundary** is attached.
-- Access keys are scoped to a single documented use case.
-- Exposure detection (e.g. GitHub secret-scanning alerts) triggers an **IaC-driven rotation**: the user is destroyed and recreated, generating fresh credentials.
-
-### 7.4 Workload-created IAM roles
+### 7.3 Workload-created IAM roles
 
 Application teams with `AWSAdministratorAccess` can create their own IAM roles inside their account (e.g. for EC2 → S3, cross-account access, third-party integrations). These roles remain bounded by the workload SCPs, so the team retains autonomy without opening org-level risk.
 
