@@ -1,7 +1,5 @@
 # Microsoft Defender for Cloud Findings
 
-> Cleaned and normalized Markdown view of the attached Microsoft Defender for Cloud findings workbook.
-
 ## Executive Summary
 
 | Metric                          |   Value |
