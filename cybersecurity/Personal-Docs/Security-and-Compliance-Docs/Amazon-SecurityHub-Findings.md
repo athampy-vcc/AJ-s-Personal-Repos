@@ -1,7 +1,5 @@
 # Amazon Findings
 
-> Cleaned and normalized Markdown view of the attached AWS findings workbook.
-
 ## Executive Summary
 
 | Metric              |   Value |
