@@ -1,6 +1,6 @@
 # CIS Benchmark Selection: Azure & AWS Foundations v3.0.0 Level 1
 
-* Status: Accepted
+* Status: Recommended
 * Deciders: Security & Compliance Team, Volvo Client Stakeholders
 * Date: 2026-06-22
 
@@ -44,11 +44,9 @@ Represent older benchmark generations and do not provide meaningful implementati
 * Latest available versions, but combining first-time control deployment with aggressive benchmark targeting increases delivery risk during initial phase.
 * For both 4.0 & 5.0 Database services are not directly covered under foundational benchmark.
 
-## Decision Outcome
+## Recommendation Rationale
 
-**Chosen option: CIS Benchmark v3.0.0 Level 1 for both Azure and AWS**
-
-This decision was made because:
+Option 5 is recommended based on the following rationale:
 
 1. **Meets CMO Compliance Threshold**: v3.0.0 is above the minimum v1.4 requirement set by current CMO audit/enforcement baseline
 2. **Tool Support Confirmed**: Both Azure v3.0.0 (Preview in Defender for Cloud) and AWS v3.0.0 are listed in the CMO/FMO CNAPP/CSPM tool support matrix.
@@ -57,7 +55,7 @@ This decision was made because:
 5. **Minimizes Future Migration Work**: Is established enough to represent a stable foundational target without being so new that it risks unsupported tooling gaps
 6. **Prioritizes Operationalization**: Allows focus on establishing governance and remediation discipline before uplifting to newer versions
 
-### Positive Consequences
+### Expected Positive Consequences (if approved)
 
 * Establishes a current, defensible foundational security baseline aligned with CIS best practices
 * Ensures all controls are monitorable through existing FMO/CMO tooling (Defender for Cloud)
@@ -67,7 +65,7 @@ This decision was made because:
 * Meets compliance requirements without unnecessary over-engineering
 * Provides sufficient coverage of major Azure/AWS foundational security domains needed for Phase 1
 
-### Negative Consequences
+### Known Trade-offs (to be accepted if approved)
 
 * Does not capture the most recent security guidance in v4.0 and v5.0 benchmarks
 * Will require a future benchmark uplift initiative to achieve maximum freshness
@@ -76,7 +74,7 @@ This decision was made because:
 
 ## Pros and Cons of the Options
 
-### Option 5: CIS Benchmark v3.0.0 Level 1 (Chosen)
+### Option 5: CIS Benchmark v3.0.0 Level 1 (Recommended)
 
 * **Good** because it is the lowest version that still provides current foundational coverage while supported by Defender for Cloud
 * **Good** because it meets the CMO v1.4 minimum requirement with a significant maturity margin
@@ -108,10 +106,3 @@ This decision was made because:
 * **Reference**: [CIS Benchmarks - Foundations First Approach](https://www.cisecurity.org/benchmarks)
 * **Tool Support**: Verified with Defender for Cloud CNAPP/CSPM support matrix
 * **Related**: Future ADR for CIS Benchmark v4.0/v5.0 uplift strategy (Phase 2+)
-
-## Implementation Next Steps
-
-1. Configure Defender for Cloud monitoring for CIS Azure v3.0.0 Level 1 controls
-2. Deploy AWS Config Rules for CIS AWS v3.0.0 compliance tracking
-3. Establish baseline compliance metrics and remediation workflows
-4. Schedule Phase 2 planning for benchmark uplift consideration (post-operational maturity)
