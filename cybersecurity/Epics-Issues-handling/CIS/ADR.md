@@ -1,6 +1,6 @@
 # CIS Benchmark Selection: Azure & AWS Foundations v3.0.0 Level 1
 
-* Status: Recommended
+* Status: Proposed
 * Deciders: Security & Compliance Team, Volvo Client Stakeholders
 * Date: 2026-06-22
 
