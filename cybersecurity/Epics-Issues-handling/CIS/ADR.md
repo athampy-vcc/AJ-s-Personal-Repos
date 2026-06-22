@@ -1,4 +1,4 @@
-# CIS Benchmark Selection: Azure & AWS Foundations v3.0.0 Level 1
+# CIS Benchmark Selection for Greenfield
 
 * Status: Proposed
 * Deciders: Security & Compliance Team, Volvo Client Stakeholders
