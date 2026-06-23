@@ -35,17 +35,17 @@ Now let me create the comprehensive report:
 
 | Policy Initiative | Category | Effect | CIS 3.0 Alignment | Status |
 |---|---|---|---|---|
-| **[VCCALZ]-GLO DENY RBAC** | Governance | Deny | 5.X (RBAC) | ✅ Deployed |
-| **[VCCALZ]-GLO DINE DIAG** | Monitoring | DeployIfNotExists | 6.X (Logging) | ✅ Deployed |
-| **[VCCALZ]-GLO DINE AMA** | Monitoring | DeployIfNotExists | 6.X (Agent Mgmt) | ✅ Deployed |
-| **[VCCALZ]-GLO DINE QUALYS** | Compliance | DeployIfNotExists | 8.X (Vulnerability) | ✅ Deployed |
-| **[VCCALZ]-GLO DINE NFL** | Storage | DeployIfNotExists | 3.X (Lifecycle Mgmt) | ✅ Deployed |
-| **[VCCALZ]-GLO DINE STORAGE LMP** | Storage | DeployIfNotExists | 3.X (Lifecycle) | ✅ Deployed |
-| **[VCCALZ]-GLO DINE ENVTYPE** | Tagging | DeployIfNotExists | 2.X (Governance) | ✅ Deployed |
-| **[VCCALZ]-GLO TAG MANDATORY** | Tagging | Deny | 2.X (Governance) | ✅ Deployed |
-| **[VCCALZ]-GLO TAG INHERITANCE** | Tagging | Audit/Deny | 2.X (Governance) | ✅ Deployed |
-| **[VCCALZ]-GLO DENY GOVERNANCE** | Governance | Deny | Multiple | ✅ Deployed |
-| **[VCCALZ]-GLO AUDIT DIAG** | Monitoring | Audit | 6.X (Compliance) | ✅ Deployed |
+| **[VCCALZ]-GLO DINE AMA** | Monitoring | DeployIfNotExists | 6.X (Agent Mgmt) | Deployed |
+| **[VCCALZ]-GLO DINE QUALYS** | Compliance | DeployIfNotExists | 8.X (Vulnerability) | Deployed |
+| **[VCCALZ]-GLO DINE STORAGE LMP** | Storage | DeployIfNotExists | 3.X (Lifecycle) | Deployed |
+| **[VCCALZ]-GLO DINE ENVTYPE** | Tagging | DeployIfNotExists | 2.X (Governance) | Deployed |
+| **[VCCALZ]-GLO TAG MANDATORY** | Tagging | Deny | 2.X (Governance) | Deployed |
+| **[VCCALZ]-GLO TAG INHERITANCE** | Tagging | Audit/Deny | 2.X (Governance) | Deployed |
+| **[VCCALZ]-GLO DENY GOVERNANCE** | Governance | Deny | Multiple | Deployed |
+| **[VCCALZ]-GLO AUDIT DIAG** | Monitoring | Audit | 6.X (Compliance) | Deployed |
+| **[VCCALZ]-GLO TAG LOWER** | Tagging | Modify | 2.X (Governance) | Deployed |
+| **[VCCALZ]-GLO TAG REQUIRED** | Governance | Deny | Multiple | Deployed |
+| **[VCCALZ]-GLO DINE AHB** | Monitoring | DeployIfNotExists | 6.X (Compliance) | Deployed |
 
 ### **Corp Regional Management Groups** (EUS, SEA, WEU, SEC)
 **Scope**: `/providers/microsoft.management/managementgroups/VolvoCars-corp-{region}`
