@@ -12,7 +12,7 @@ Volvo needs to establish a foundational security baseline using CIS benchmarks f
 
 ## Decision Drivers
 
-* **Tool Availability**: Monitoring capabilities must be supported by Prisma CNAPP (CMO) & Defender for Cloud - CNAPP/CSPM platform as the compliance monitoring tool
+* **Tool Availability**: Monitoring capabilities must be supported by Prisma CNAPP (CMO) & Defender for Cloud (FMO under POC) - CNAPP/CSPM platform as the compliance monitoring tool
 * **CMO Requirements**: CMO audit/enforcement baseline is set at CIS Controls v1.4, establishing a minimum version threshold
 * **Benchmark Scope Alignment**: CIS explicitly recommends Foundations benchmarks as the first step, with Service Category benchmarks as a second step for mature implementations
 * **Implementation Speed vs. Freshness**: Priority given to operationalizing controls quickly rather than adopting the latest benchmark versions immediately
@@ -22,7 +22,7 @@ Volvo needs to establish a foundational security baseline using CIS benchmarks f
 ## Considered Options
 
 ### Option 1: CIS Controls v7.1, v8, v8.1 (Aggregate Common Controls)
-Not viable due to lack of monitoring support in Defender for Cloud platform.
+Not viable due to lack of monitoring support in Defender for Cloud (FMO under POC) platform.
 
 ### Option 2: CIS Benchmark Versions Below v1.4
 Excluded because CMO audit/enforcement baseline is currently set at v1.4, making older versions non-compliant with governance requirements.
@@ -49,7 +49,7 @@ Represent older benchmark generations and do not provide meaningful implementati
 Option 5 is recommended based on the following rationale:
 
 1. **Meets CMO Compliance Threshold**: v3.0.0 is above the minimum v1.4 requirement set by current CMO audit/enforcement baseline
-2. **Tool Support Confirmed**: Both Azure v3.0.0 (Preview in Defender for Cloud) and AWS v5.0.0 are listed in the CMO/FMO CNAPP/CSPM tool support matrix.
+2. **Tool Support Confirmed**: Both Azure v3.0.0 (Preview in Defender for Cloud (FMO under POC)) and AWS v5.0.0 are listed in the CMO/FMO CNAPP/CSPM tool support matrix.
 3. **Foundational First Approach**: Aligns with CIS's own guidance that Foundations benchmarks should be the first step; Level 2 or Service Category benchmarks follow as a mature second step
 4. **Optimal Maturity-to-Implementation Ratio**: Balances reasonably current baseline coverage with manageable implementation complexity
 5. **Minimizes Future Migration Work**: Is established enough to represent a stable foundational target without being so new that it risks unsupported tooling gaps
@@ -58,7 +58,7 @@ Option 5 is recommended based on the following rationale:
 ### Expected Positive Consequences (if approved)
 
 * Establishes a current, defensible foundational security baseline aligned with CIS best practices
-* Ensures all controls are monitorable through existing FMO/CMO tooling (Defender for Cloud)
+* Ensures all controls are monitorable through existing FMO/CMO tooling (Defender for Cloud (FMO under POC))
 * Reduces implementation risk by targeting a stable, mature benchmark version
 * Creates a clear upgrade path for future Phase 2+ enhancements
 * Enables rapid deployment and operational maturity before benchmark transitions
