@@ -45,7 +45,7 @@ This gap analysis shows that the current Azure Policy baseline in the Volvo Gree
 | **[VCCALZ]-GLO DINE AHB** | Monitoring | DeployIfNotExists | 6.X (Compliance) | Deployed |
 
 
-## Evidence-backed Assignment Reconciliation (All Listed Policies)
+## Subscription/Management Group Level Policy Review
 
 Legend:
 - Control mapping values are CIS 3.0 references when direct, otherwise Supporting or Indirect.
