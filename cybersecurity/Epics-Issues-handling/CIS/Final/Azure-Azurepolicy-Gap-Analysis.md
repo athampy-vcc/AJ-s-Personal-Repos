@@ -14,13 +14,13 @@ This gap analysis shows that the current Azure Policy baseline in the Volvo Gree
 ### Current State
 - **Policies Deployed**: 20+ custom Azure policies at management group (root) and landing zone scopes
 - **Deployment Level**: Primarily at VolvoCars root MG, corp regional MGs, and greenfield landing zone MG
-- **Coverage**: ~35% of CIS 3.0 requirements have direct policy implementation
-- **Gap**: 65% of CIS 3.0 controls lack automated enforcement through Azure policies
+- **Coverage**: Around 35+ percent of CIS 3.0 requirements have direct policy implementation
+- **Gap**: Around 60+ percent of CIS 3.0 controls lack automated enforcement through Azure policies
 
 ### Key Findings
 1. **Strong Areas**: RBAC governance, diagnostic logging (DINE), storage security, AKS guardrails
 2. **Weak Areas**: Identity & Access Management (Entra ID), SQL/Database controls, App Service
-3. **Missing**: ~60+ CIS 3.0 controls without policy mapping or remediation
+3. **Missing**: Around 60+ CIS 3.0 controls without policy mapping or remediation
 
 ---
 
