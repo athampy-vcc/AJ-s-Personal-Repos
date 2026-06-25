@@ -103,15 +103,15 @@ Details:
 
 ### **Overview: Policy Deployment by CIS Section**
 
-| CIS 3.0 Section | Total Controls | Deployed Policies | Coverage % | Enforcement Status |
+| CIS 3.0 Section | Total Controls | Deployed Policies | Enforcement Status |
 |---|---|---|---|---|
-| **Identity & Access (2.X)** | 15 | 1 (DENY RBAC only) | 7% | Partial |
-| **Storage (4.X)** | 12 | 4 (PNA, TLS, LMP, Encrypt) | 67% | Mixed (Enforce + Audit) |
-| **Logging & Monitoring (6.X)** | 12 | 3+ (DINE DIAG, AMA, Audit) | 60% | DeployIfNotExists + Audit |
-| **Networking (7.X)** | 8 | 4+ (Network Guardrails x4 regions) | 60% | Enforced + Audit variants |
-| **Key Vault (3.3.X)** | 6 | 1 (Partial via DFC Config) | 20% | DeployIfNotExists |
-| **Database (5.1.X SQL)** | 10 | 1 (Audit-only, enforcement disabled) | 10% | Disabled/Audit |
-| **AKS/Kubernetes (Supporting Mapping)** | 8 | 1 (Deny AKS Guardrails) | 25% | Enforced |
+| **Identity & Access (2.X)** | 15 | 1 (DENY RBAC only) | Partial |
+| **Storage (4.X)** | 12 | 4 (PNA, TLS, LMP, Encrypt) | Mixed (Enforce + Audit) |
+| **Logging & Monitoring (6.X)** | 12 | 3+ (DINE DIAG, AMA, Audit) | DeployIfNotExists + Audit |
+| **Networking (7.X)** | 8 | 4+ (Network Guardrails x4 regions) | Enforced + Audit variants |
+| **Key Vault (3.3.X)** | 6 | 1 (Partial via DFC Config) | DeployIfNotExists |
+| **Database (5.1.X SQL)** | 10 | 1 (Audit-only, enforcement disabled) | Disabled/Audit |
+| **AKS/Kubernetes (Supporting Mapping)** | 8 | 1 (Deny AKS Guardrails) | Enforced |
 
 ---
 
