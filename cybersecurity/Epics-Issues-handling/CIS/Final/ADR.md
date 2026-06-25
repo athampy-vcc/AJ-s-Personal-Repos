@@ -105,6 +105,7 @@ Option 5 is recommended based on the following rationale:
 ## Links
 
 * **Reference**: [CIS Benchmarks - Foundations First Approach](https://www.cisecurity.org/benchmarks)
+* Feature reference: [Define the Cloud Security Standard and reference baseline](https://github.com/volvo-cars/azure-core-infrastructure/issues/370)
 * **Related Documents**:
     - [CIS Azure Prisma Policy Control Matrix](Link 1)
     - [CIS AWS Prisma Policy Control Matrix](Link 2)
