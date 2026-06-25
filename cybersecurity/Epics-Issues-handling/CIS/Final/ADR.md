@@ -39,7 +39,7 @@ Represent older benchmark generations and do not provide meaningful implementati
 
 ### Option 5: CIS Benchmark Versions v4.0.0 - v5.0.0
 * Latest available versions, but combining first-time control deployment with aggressive benchmark targeting increases delivery risk during initial phase.
-* For both 4.0 & 5.0 Database services are not directly covered under foundational benchmark for Azure.
+* For both 4.0 & 5.0 Database services are not directly covered under foundational benchmark for Azure. It has been relocated from CIS Foundational official benchmark, which is not available in Prisma.
 
 ## Recommendation Rationale
 
