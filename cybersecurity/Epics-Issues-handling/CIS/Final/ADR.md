@@ -65,7 +65,7 @@ Option 4 is recommended based on the following rationale:
 
 ### Known Trade-offs (to be accepted if approved)
 
-* Does not capture the most recent security guidance in v4.0 and v5.0 benchmarks
+* Does not capture the most recent security guidance
 * Will require a future benchmark uplift initiative to achieve maximum freshness
 * Latest threat landscape findings in newer versions will not be addressed until Phase 2+
 * May miss emerging control categories introduced in later versions
