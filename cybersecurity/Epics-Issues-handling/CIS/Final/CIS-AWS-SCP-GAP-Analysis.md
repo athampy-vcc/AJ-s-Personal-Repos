@@ -17,8 +17,8 @@ It focuses on the practical coverage provided by existing Service Control Polici
 - Policies deployed: 4 root SCPs plus 2 greenfield OU SCPs (common and corp variants)
 - Deployment level: Organization root and selected OUs (corp, online, core, sandbox, shared)
 - Remediation automation: Security group ingress auto-remediation, S3 lifecycle auto-remediation, tagging remediation Lambda, IAM instance profile remediation Lambda
-- Coverage: around 22-30% of CIS AWS 5.0 controls have direct preventive or automated remediation evidence
-- Gap: around 70-78% of CIS AWS 5.0 controls remain partial, detective only, or unsupported by current automation evidence
+- Coverage: Around 25+ percent of CIS AWS 5.0 controls have direct preventive or automated remediation evidence
+- Gap: Around 70+ percent of CIS AWS 5.0 controls remain partial, detective only, or unsupported by current automation evidence
 
 ### Key Findings
 1. Strong areas: Preventive guardrails for IAM user lifecycle restrictions, root access key prevention, IMDSv2 enforcement, encryption at rest for EBS/RDS/EFS, and SG ingress remediation.
