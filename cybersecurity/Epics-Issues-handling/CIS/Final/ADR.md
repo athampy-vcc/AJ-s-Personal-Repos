@@ -46,7 +46,7 @@ Represent older benchmark generations and do not provide meaningful implementati
 Option 4 is recommended based on the following rationale:
 
 1. **Meets CMO Compliance Threshold**: v3.0.0 is above the minimum v1.4 requirement set by current CMO audit/enforcement baseline
-2. **Tool Support Confirmed**: Both Azure v3.0.0 (Preview in Defender for Cloud (FMO under POC)) and AWS v5.0.0 are listed in the CMO/FMO CNAPP/CSPM tool support matrix.
+2. **Tool Support Confirmed**: Both Azure v3.0.0 (Available as Preview currently in Defender for Cloud) and AWS v5.0.0 are listed in the CMO/FMO CNAPP/CSPM tool support matrix.
 3. **Foundational First Approach**: Aligns with CIS's own guidance that Foundations benchmarks should be the first step; Level 2 or Service Category benchmarks follow as a mature second step
 4. **Optimal Maturity-to-Implementation Ratio**: Balances reasonably current baseline coverage with manageable implementation complexity
 5. **Minimizes Future Migration Work**: Is established enough to represent a stable foundational target without being so new that it risks unsupported tooling gaps
