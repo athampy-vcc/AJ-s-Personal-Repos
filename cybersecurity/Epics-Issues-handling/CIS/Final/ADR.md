@@ -8,11 +8,11 @@ Technical Story: Decision on which CIS benchmark version to follow for Azure & A
 
 ## Context and Problem Statement
 
-Volvo needs to establish a foundational security baseline using CIS benchmarks for both Azure and AWS cloud environments. Multiple CIS benchmark versions exist with varying levels of maturity and tool support. The primary constraint is that monitoring capabilities must be available through Prisma CNAPP (CMO) & Defender for Cloud (FMO). The decision must balance foundational security coverage with practical implementation speed and tool availability, while avoiding unnecessary future migration efforts.
+Volvo needs to establish a foundational security baseline using CIS benchmarks for both Azure and AWS cloud environments. Multiple CIS benchmark versions exist with varying levels of maturity and tool support. The primary constraint is that monitoring capabilities must be available through Prisma CNAPP (CMO) & Defender for Cloud (FMO under POC). The decision must balance foundational security coverage with practical implementation speed and tool availability, while avoiding unnecessary future migration efforts.
 
 ## Decision Drivers
 
-* **Tool Availability**: Monitoring capabilities must be supported by Prisma CNAPP (CMO) & Defender for Cloud (FMO) - CNAPP/CSPM platform as the compliance monitoring tool
+* **Tool Availability**: Monitoring capabilities must be supported by Prisma CNAPP (CMO) & Defender for Cloud - CNAPP/CSPM platform as the compliance monitoring tool
 * **CMO Requirements**: CMO audit/enforcement baseline is set at CIS Controls v1.4, establishing a minimum version threshold
 * **Benchmark Scope Alignment**: CIS explicitly recommends Foundations benchmarks as the first step, with Service Category benchmarks as a second step for mature implementations
 * **Implementation Speed vs. Freshness**: Priority given to operationalizing controls quickly rather than adopting the latest benchmark versions immediately
