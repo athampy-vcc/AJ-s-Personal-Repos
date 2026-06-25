@@ -6,6 +6,8 @@
 **Scope**: CIS Microsoft Azure Foundations Benchmark v3.0.0
 
 ---
+## Overview
+This gap analysis shows that the current Azure Policy baseline in the Volvo Greenfield environment provides a solid foundation for governance, networking guardrails, storage protection, and logging/monitoring controls, but it does not yet deliver full CIS Microsoft Azure Foundations Benchmark v3.0.0 coverage. The strongest implementation areas are preventive and detective controls for network exposure, diagnostic settings deployment, tagging/governance enforcement, and selected storage security requirements. These controls demonstrate that core platform guardrails are already established at root, regional, and landing zone management group scopes.
 
 ## Executive Summary
 
