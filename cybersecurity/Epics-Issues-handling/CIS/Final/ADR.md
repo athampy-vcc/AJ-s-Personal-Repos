@@ -80,7 +80,7 @@ Option 4 is recommended based on the following rationale:
 * **Good** because it allows focus on operationalization discipline before benchmark targeting
 * **Good** because it establishes a stable, well-documented baseline with broad ecosystem understanding
 * **Good** because it avoids the implementation risk of combining first-time deployment with aggressive version targeting
-* **Bad** because it is not the latest available version (v4.0, v5.0 exist)
+* **Bad** because it is not the latest available version
 * **Bad** because future uplift to newer versions will be required as the organization matures
 
 ### Option 5: CIS Benchmark v4.0.0 - v5.0.0 (Latest)
