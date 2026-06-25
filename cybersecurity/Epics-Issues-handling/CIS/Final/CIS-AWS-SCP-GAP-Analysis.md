@@ -86,12 +86,12 @@ Legend:
 
 ### Overview: Deployment by CIS 5.0 Section
 
-| CIS 5.0 Section | Total Controls | Evidence-backed coverage | Coverage % | Enforcement status |
-|---|---|---|---|---|
-| Identity and Access (1.x) | 21 | 3-5 direct or partial | 14-24% | Mostly partial |
-| Storage and Databases (2.1-2.3) | 9 | 3-4 direct or partial | 33-44% | Mixed |
-| Logging and Monitoring (3.x and 4.x) | 25 | 3-5 direct or partial | 12-20% | Mostly protective/detective |
-| Networking and Compute (5.x) | 8 | 4-5 direct or partial | 50-63% | Strongest section |
+| CIS 5.0 Section | Total Controls | Evidence-backed coverage | Enforcement status |
+|---|---|---|---|
+| Identity and Access (1.x) | 21 | 3-5 direct or partial | Mostly partial |
+| Storage and Databases (2.1-2.3) | 9 | 3-4 direct or partial | Mixed |
+| Logging and Monitoring (3.x and 4.x) | 25 | 3-5 direct or partial | Mostly protective/detective |
+| Networking and Compute (5.x) | 8 | 4-5 direct or partial | Strongest section |
 
 Note: Percentages are design-evidence estimates from code and documented policy definitions, not live account compliance scores.
 
