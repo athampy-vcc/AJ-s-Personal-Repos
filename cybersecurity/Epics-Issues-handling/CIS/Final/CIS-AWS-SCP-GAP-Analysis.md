@@ -27,7 +27,7 @@ It focuses on the practical coverage provided by existing Service Control Polici
 
 ---
 
-## Part 1: Deployed AWS Controls by Volvo Repos
+## 1: Deployed AWS Controls by Volvo Repos
 
 ### Organization and OU Deployments
 
@@ -82,7 +82,7 @@ Legend:
 
 ---
 
-## Part 2: CIS 5.0 Controls Coverage Matrix
+## 2: CIS 5.0 Controls Coverage Matrix
 
 ### Overview: Deployment by CIS 5.0 Section
 
@@ -169,7 +169,7 @@ Analysis: Networking/compute is the most mature area due to combined preventive 
 
 ---
 
-## Part 3: Gap Status Summary
+## 3: Gap Status Summary
 
 | Gap Category | Status | Rationale |
 |---|---|---|
@@ -179,7 +179,7 @@ Analysis: Networking/compute is the most mature area due to combined preventive 
 
 ---
 
-## Part 4: Confidence and Limits
+## 4: Confidence and Limits
 
 - Proven from implementation evidence:
   - SCP guardrail families and intent (root and greenfield OU policy design)
@@ -194,7 +194,7 @@ Confidence level: Medium-high on control design intent, medium on organization-w
 
 ---
 
-## Part 5: Prioritized Action Plan
+## 5: Prioritized Action Plan
 
 1. Build and deploy section 4.x CloudWatch metric filter/alarm baseline via centralized IaC and StackSets.
 2. Add explicit preventive controls for RDS public access and RDS auto minor version upgrade.
