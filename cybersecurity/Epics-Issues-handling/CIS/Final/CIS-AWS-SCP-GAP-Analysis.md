@@ -6,8 +6,12 @@ Date: 2026-06-24
 Scope: CIS AWS Foundations Benchmark v5.0.0
 
 ---
+## Overview
+This document assesses how far the current AWS organizational guardrails and remediation automations align with the CIS AWS Foundations Benchmark v5.0.0 for the Volvo greenfield environment.
 
+It focuses on the practical coverage provided by existing Service Control Policies (SCPs), supporting remediation workflows, and baseline security automations across organization root and selected greenfield organizational units. The analysis distinguishes between controls that are fully enforced, partially covered, detective/corrective only, or still unaddressed.
 ## Executive Summary
+
 
 ### Current State
 - Policies deployed: 4 root SCPs plus 2 greenfield OU SCPs (common and corp variants)
