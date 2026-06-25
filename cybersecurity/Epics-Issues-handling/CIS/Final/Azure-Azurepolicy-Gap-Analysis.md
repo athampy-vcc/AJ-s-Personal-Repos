@@ -47,7 +47,7 @@ This gap analysis shows that the current Azure Policy baseline in the Volvo Gree
 
 ## Subscription/Management Group Level Policy Review
 
-Legend:
+Details:
 - Control mapping values are CIS 3.0 references when direct, otherwise Supporting or Indirect.
 - Status values: Enforced, Audit only, DeployIfNotExists, Mixed, Governance-only.
 
