@@ -3,12 +3,13 @@
 * Status: Proposed
 * Deciders: Security & Compliance Team, Volvo Client Stakeholders
 * Date: 2026-06-25
+* Terminology : CMO - Current Mode of Operation, FMO - Future Mode of Operation, POC - Proof of Concept, CIS - Center for Internet Security
 
 Technical Story: Decision on which CIS benchmark version to follow for Azure & AWS regions for Volvo client foundational baseline
 
 ## Context and Problem Statement
 
-Volvo needs to establish a foundational security baseline using CIS benchmarks for both Azure and AWS cloud environments. Multiple CIS benchmark versions exist with varying levels of maturity and tool support. The primary constraint is that monitoring capabilities must be available through Prisma CNAPP (CMO) & Defender for Cloud (FMO under POC). The decision must balance foundational security coverage with practical implementation speed and tool availability, while avoiding unnecessary future migration efforts.
+Volvo needs to establish a foundational security baseline using CIS benchmarks for both Azure and AWS cloud environments. Multiple CIS benchmark versions exist with varying levels of maturity and tool support. The primary constraint is that monitoring capabilities must be available through Prisma CNAPP (CMO) & Defender for Cloud (FMO under POC). The decision must balance foundational security coverage with practical implementation speed and tool availability, while avoiding unnecessary future migration efforts
 
 ## Decision Drivers
 
@@ -38,15 +39,15 @@ Represent older benchmark generations and do not provide meaningful implementati
 * **AWS**: CIS_AWS_Foundations_Benchmark_v5.0.0
 
 ### Option 5: CIS Benchmark Versions v4.0.0 - v5.0.0
-* Latest available versions, but combining first-time control deployment with aggressive benchmark targeting increases delivery risk during initial phase.
-* For both 4.0 & 5.0 Database services are not directly covered under foundational benchmark for Azure. It has been relocated from CIS Foundational official benchmark, which is not available in Prisma.
+* Latest available versions, but combining first-time control deployment with aggressive benchmark targeting increases delivery risk during initial phase
+* For both 4.0 & 5.0 Database services are not directly covered under foundational benchmark for Azure. It has been relocated from CIS Foundational official benchmark, which is not available in Prisma
 
 ## Recommendation Rationale
 
 Option 4 is recommended based on the following rationale:
 
 1. **Meets CMO Compliance Threshold**: v3.0.0 is above the minimum v1.4 requirement set by current CMO audit/enforcement baseline
-2. **Tool Support Confirmed**: Both Azure v3.0.0 (Available as Preview currently in Defender for Cloud) and AWS v5.0.0 are listed in the CMO/FMO CNAPP/CSPM tool support matrix.
+2. **Tool Support Confirmed**: Both Azure v3.0.0 (Available as Preview currently in Defender for Cloud) and AWS v5.0.0 are listed in the CMO/FMO CNAPP/CSPM tool support matrix
 3. **Foundational First Approach**: Aligns with CIS's own guidance that Foundations benchmarks should be the first step; Level 2 or Service Category benchmarks follow as a mature second step
 4. **Optimal Maturity-to-Implementation Ratio**: Balances reasonably current baseline coverage with manageable implementation complexity
 5. **Minimizes Future Migration Work**: Is established enough to represent a stable foundational target without being so new that it risks unsupported tooling gaps
@@ -55,7 +56,7 @@ Option 4 is recommended based on the following rationale:
 ### Expected Positive Consequences (if approved)
 
 * Establishes a current, defensible foundational security baseline aligned with CIS best practices
-* Ensures all controls are monitorable through existing FMO/CMO tooling (Defender for Cloud (FMO under POC))
+* Ensures all controls are monitorable through existing FMO/CMO tooling
 * Reduces implementation risk by targeting a stable, mature benchmark version
 * Creates a clear upgrade path for future Phase 2+ enhancements
 * Enables rapid deployment and operational maturity before benchmark transitions
@@ -73,7 +74,7 @@ Option 4 is recommended based on the following rationale:
 
 ### Option 4: CIS Foundational Benchmark v3.0.0 Level 1 for Azure and CIS v5.0.0 Level 1 for AWS (Recommended)
 
-* **Good** becuase both 4.0 & 5.0 Database services are not directly covered under foundational benchmark for Azure.
+* **Good** becuase both 4.0 & 5.0 Database services are not directly covered under foundational benchmark for Azure
 * **Good** because it is the lowest version that still provides current foundational coverage while supported by Defender for Cloud
 * **Good** because it meets the CMO v1.4 minimum requirement with a significant maturity margin
 * **Good** because it allows focus on operationalization discipline before benchmark targeting
