@@ -39,7 +39,7 @@ Represent older benchmark generations and do not provide meaningful implementati
 * **AWS**: CIS_AWS_Foundations_Benchmark_v5.0.0
 
 ### Option 5: CIS Benchmark Versions v4.0.0 - v5.0.0
-* Latest available versions, but combining first-time control deployment with aggressive benchmark targeting increases delivery risk during initial phase
+* Combining first-time control deployment with aggressive benchmark targeting increases delivery risk during initial phase
 * For both 4.0 & 5.0 Database services are not directly covered under foundational benchmark for Azure. It has been relocated from CIS Foundational official benchmark, which is not available in Prisma
 
 ## Recommendation Rationale
@@ -83,7 +83,7 @@ Option 4 is recommended based on the following rationale:
 * **Bad** because it is not the latest available version
 * **Bad** because future uplift to newer versions will be required as the organization matures
 
-### Option 5: CIS Benchmark v4.0.0 - v5.0.0 (Latest)
+### Option 5: CIS Benchmark v4.0.0 - v5.0.0
 
 * **Good** because it represents the most current security guidance from CIS
 * **Good** because it captures emerging control categories and latest threat landscape
