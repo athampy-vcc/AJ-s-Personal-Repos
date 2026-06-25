@@ -2,7 +2,7 @@
 ## Volvo Greenfield Environment
 
 **Document Version**: 1.0  
-**Date**: 2026-06-23  
+**Date**: 2026-06-25  
 **Scope**: CIS Microsoft Azure Foundations Benchmark v3.0.0
 
 ---

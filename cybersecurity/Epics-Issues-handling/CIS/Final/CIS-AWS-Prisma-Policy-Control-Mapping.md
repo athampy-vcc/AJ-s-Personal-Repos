@@ -2,14 +2,7 @@
 
 Understand which CIS AWS Benchmark version supports each Prisma CNAPP policy, and whether a control was deprecated, removed, replaced, or carried forward as versions progress.
 
-**How to read the cells:**
 
-- The **Security Hub control** column shows the AWS Security Hub control ID the policy maps to (the bridge between Prisma's naming and CIS).
-- For **CIS v1.2.0, v1.4.0, v3.0.0, v5.0.0**, each cell shows the *actual CIS requirement ID* (e.g. `3.1`) or an authoritative status — `Not supported – CIS removed`, `Not supported – replaced by 5.3/5.4`, `Manual check`, `Not supported – added later` — verified against AWS's official Security Hub CIS documentation.
-- For **v1.3.0, v1.5.0, v2.0.0, v4.0.0, v6.0.0**, the cell shows `Supported` / `Not supported` from the Prisma export (AWS does not publish a verified ID crosswalk for these versions).
-- The **Lifecycle note** flags controls dropped in the newest version (v6.0.0), introduced later, intermittently mapped, or with no CIS equivalent.
-
-> Verified CIS IDs are shown for the four versions AWS officially documents (v1.2.0, v1.4.0, v3.0.0, v5.0.0). Status phrases like 'CIS removed' or 'replaced by' come directly from AWS's published version-comparison table. CIS renumbered sections across versions (e.g. logging was section 3 in v1.2.0, section 4 in v1.4.0), so IDs differ for the same control between versions.
 
 | Control / Policy (Prisma CNAPP) | Security Hub control | CIS v1.2.0 requirement | CIS v1.3.0 requirement | CIS v1.4.0 requirement | CIS v1.5.0 requirement | CIS v2.0.0 requirement | CIS v3.0.0 requirement | CIS v4.0.0 requirement | CIS v5.0.0 requirement | CIS v6.0.0 requirement | Lifecycle note |
 |---|---|---|---|---|---|---|---|---|---|---|---|
