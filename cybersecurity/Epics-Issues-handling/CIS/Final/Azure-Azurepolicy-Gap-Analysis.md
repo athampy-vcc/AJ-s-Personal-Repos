@@ -104,7 +104,7 @@ Details:
 ### **Overview: Policy Deployment by CIS Section**
 
 | CIS 3.0 Section | Total Controls | Deployed Policies | Enforcement Status |
-|---|---|---|---|---|
+|---|---|---|---|
 | **Identity & Access (2.X)** | 15 | 1 (DENY RBAC only) | Partial |
 | **Storage (4.X)** | 12 | 4 (PNA, TLS, LMP, Encrypt) | Mixed (Enforce + Audit) |
 | **Logging & Monitoring (6.X)** | 12 | 3+ (DINE DIAG, AMA, Audit) | DeployIfNotExists + Audit |
@@ -201,28 +201,3 @@ Details:
 **Analysis**: 0–1 of 5 controls fully effective. **Gap: 80–100%**. SQL policies present but critically hampered by **enforcement_mode disabled** on threat detection and audit-only status on SQL auditing. These must be re-enabled for compliance.
 
 ---
-
-### **Section 7: AKS/Kubernetes (Supporting, Non-Direct in CIS Azure 3.0)**
-
-| CIS 3.0 Req ID | Control | Policy Status | Assignment Names | Implementation Mode | Remediation |
-|---|---|---|---|---|---|
-| **Supporting** | Privileged containers denied | **Deployed** | `[VCCALZ]-LZ DENY AKS GUARDRAILS` | **Enforced** | Strong AKS posture, but no direct CIS Azure Foundations 3.0 control ID |
-| **Supporting** | Privilege escalation disabled | **Deployed** | `[VCCALZ]-LZ DENY AKS GUARDRAILS` | **Enforced** | Strong AKS posture, mapped as supporting control |
-| **Supporting** | Ingress HTTP disabled | **Deployed** | `[VCCALZ]-LZ DENY AKS GUARDRAILS` | **Enforced** | Strong AKS posture, mapped as supporting control |
-| **5.2.x note** | CIS 5.2.x in this benchmark refers to PostgreSQL controls, not AKS | N/A | N/A | N/A | Keep AKS guardrails, but track separately from CIS Azure Foundations IDs |
-
-**Analysis**: AKS controls are tracked as supporting controls because CIS Azure Foundations 3.0 does not provide direct AKS control IDs in this benchmark. Guardrails provide strong enforcement value, but should be reported separately from direct CIS scoring.
-
----
-
-### **Section 8: Governance & Tagging (Supporting Baseline)**
-
-| CIS 3.0 Req ID | Control | Policy Status | Assignment Names | Implementation Mode | Remediation |
-|---|---|---|---|---|---|
-| **2.1.1** | Security defaults enabled | None deployed | N/A | N/A | **Add**: Entra Security Defaults policy |
-| **Supporting** | Tags mandatory on resources | **Deployed** | `[VCCALZ]-GLO TAG MANDATORY`, `[VCCALZ]-GLO TAG REQUIRED` | **Deny** | Strong governance baseline, not a direct CIS 2.x requirement |
-| **Supporting** | Tag inheritance enforced | **Deployed** | `[VCCALZ]-GLO TAG INHERITANCE` | **Audit/Deny** | Active governance baseline, not a direct CIS 2.x requirement |
-| **Locations** | Allowed locations enforced | **Deployed** | `[VCCALZ]-*-DENY GOVERNANCE` (regional variants) + `[VCCALZ]-ONLINE DENY GOVERNANCE` | **Enforced** | Strong; governance policies deny non-compliant locations |
-| **Online/Platform** | Online/Platform guardrails | **Deployed** | `[VCCALZ]-ONLINE DENY GOVERNANCE`, `[VCCALZ]-PLATFORM DENY NETWORK GUARDRAIL` | **Enforced** | Subscriptions protected via scope-specific denies |
-
-**Analysis**: Governance baseline is strong (especially tagging and location controls), but only a subset maps directly to CIS 2.x controls. Missing direct control remains 2.1.1 Security Defaults.
