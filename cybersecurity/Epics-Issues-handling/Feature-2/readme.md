@@ -1,5 +1,7 @@
-Establish cloud control applicability and scope
-Description
+# Establish cloud control applicability and scope
+
+## Description
+
 Identify the workloads, environments, and resource types in scope for the Cloud Security Standard in Greenfield environments, and document control applicability across AWS and Azure.
 
 🌟 Business Goal (SMART)
